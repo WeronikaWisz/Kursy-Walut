@@ -1,0 +1,20 @@
+<resources>
+    <string name="app_name">Weronika_Wisz_cz_9_30_</string>
+    <string name="title_activity_historic_rates">HistoricRatesActivity</string>
+    <!-- Strings used for fragments for navigation -->
+    <string name="first_fragment_label">First Fragment</string>
+    <string name="second_fragment_label">Second Fragment</string>
+    <string name="next">Next</string>
+    <string name="previous">Previous</string>
+
+    <string name="hello_first_fragment">Hello first fragment</string>
+    <string name="hello_second_fragment">Hello second fragment. Arg: %1$s</string>
+    <string name="todayRateText">Dzisiejszy kurs: %1$f</string>
+    <string name="yesterdayRateText">Wczorajszy kurs: %1$f</string>
+    <string name="increaseTextView">⬆</string>
+    <string name="todayGoldText">Dzisiejszy kurs złota: %1$f </string>
+    <string name="arrowGoldTextView">⬆</string>
+    <string name="priceToDisplay">0.0</string>
+    <string name="secondCountryCode">EUR</string>
+    <string name="firstCountryCode">PLN</string>
+</resources>

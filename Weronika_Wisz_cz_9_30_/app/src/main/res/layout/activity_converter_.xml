@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Converter_Activity">
+
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:stretchColumns="*"
+        android:background="@color/light_gray"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TableRow
+            android:layout_width="0dp"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/textView2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_span="2"
+                android:gravity="center"
+                android:text="Wybierz kierunek konwersji" />
+
+            <TextView
+                android:id="@+id/textView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_span="2"
+                android:gravity="center"
+                android:text="Wybierz walutę" />
+
+        </TableRow>
+
+        <TableRow
+            android:layout_width="0dp"
+            android:layout_height="match_parent">
+
+            <NumberPicker
+                android:id="@+id/directionPicker"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="48sp"
+                android:layout_marginLeft="48sp"
+                android:layout_marginEnd="48sp"
+                android:layout_marginRight="48sp"
+                android:layout_span="2" />
+
+            <NumberPicker
+                android:id="@+id/currencyPicker"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="48sp"
+                android:layout_marginLeft="48sp"
+                android:layout_marginEnd="48sp"
+                android:layout_marginRight="48sp"
+                android:layout_span="2" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="0dp"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:id="@+id/firstCurrencyImageView"
+                android:layout_width="30sp"
+                android:layout_height="30sp"
+                android:layout_marginTop="16sp"
+                android:layout_marginBottom="16sp"
+                android:layout_span="1"
+                tools:srcCompat="@tools:sample/avatars" />
+
+            <TextView
+                android:id="@+id/firstCurrencyCode"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="16sp"
+                android:layout_span="1"
+                android:text="@string/firstCountryCode" />
+
+            <EditText
+                android:id="@+id/inputPriceToConvert"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16sp"
+                android:layout_marginEnd="10sp"
+                android:layout_marginRight="10sp"
+                android:layout_marginBottom="16sp"
+                android:layout_span="2"
+                android:autofillHints="kwota"
+                android:digits="0123456789."
+                android:ellipsize="end"
+                android:inputType="numberDecimal"
+                android:singleLine="true" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="0dp"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:id="@+id/secondCurrencyImageView"
+                android:layout_width="30sp"
+                android:layout_height="30sp"
+                android:layout_marginTop="16sp"
+                android:layout_marginBottom="32sp"
+                android:layout_span="1"
+                tools:srcCompat="@tools:sample/avatars" />
+
+            <TextView
+                android:id="@+id/secondCurrencyCode"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16sp"
+                android:layout_marginBottom="32sp"
+                android:layout_span="1"
+                android:text="@string/secondCountryCode" />
+
+            <TextView
+                android:id="@+id/priceToDisplay"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16sp"
+                android:layout_marginEnd="10sp"
+                android:layout_marginRight="10sp"
+                android:layout_span="2"
+                android:ellipsize="end"
+                android:singleLine="true"
+                android:text="@string/priceToDisplay"
+                android:textSize="18sp"/>
+
+        </TableRow>
+
+        <TableRow
+            android:layout_width="0dp"
+            android:layout_height="match_parent">
+
+            <Button
+                android:id="@+id/calculateButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="72sp"
+                android:layout_marginLeft="72sp"
+                android:layout_marginEnd="72sp"
+                android:layout_marginRight="72sp"
+                android:layout_span="4"
+                android:gravity="center"
+                android:text="Przelicz" />
+        </TableRow>
+    </TableLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
